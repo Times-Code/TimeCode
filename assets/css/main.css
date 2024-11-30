@@ -840,7 +840,7 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 700;
   font-family: var(--nav-font);
 }
@@ -851,7 +851,7 @@ section,
 
 .hero p {
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
@@ -901,11 +901,11 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -1814,9 +1814,60 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.button-link {
+  text-decoration: none; 
+  display: inline-block; 
+  margin-top: 12px;
+}
+
+.styled-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 8px 20px; /* Increase padding for a larger button */
+  text-align: center; /* Center text */
+  text-transform: uppercase; /* Make text all caps */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s ease; /* Smooth transition for background color and scaling */
+}
+
+/* Button hover effect */
+.styled-button:hover {
+  background-color: #45a049; /* Slightly darker green */
+  transform: translateY(-3px); /* Button lifts slightly when hovered */
+}
+
+/* Optional: Add focus style for accessibility */
+.styled-button:focus {
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.8); /* Add a subtle green glow */
+}
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+  .button-link {
+    text-decoration: none; 
+    display: inline-block; 
+    margin-top: 10px;
+  }
+  
+  .styled-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 6px 16px; /* Increase padding for a larger button */
+    text-align: center; /* Center text */
+    text-transform: uppercase; /* Make text all caps */
+    font-size: 14px; /* Set font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s ease; /* Smooth transition for background color and scaling */
+  }
 }
